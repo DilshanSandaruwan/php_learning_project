@@ -9,6 +9,20 @@
     <button name="submit" type="submit">Login</button>
     </form>
 
+    <?php 
+    if (isset($_GET["error"])) {
+        if ($_GET["error"] == "emptyInput") {
+           echo '<div class="error">Fill in the all fields</div>';
+        }elseif ($_GET["error"] == "wrongLogin") {
+            echo '<div class="error">Invalid Details !</div>';
+        }elseif ($_GET["error"] == "stmtfailed") {
+            echo '<div class="error">Something went wrong</div>';
+    }elseif ($_GET["error"] == "none") {
+        echo '<div class="error">Account created</div>';
+}
+}
+    ?>
+
     <p>New Here ?<a href="signup.php">Register.</a></p>
     </div>
 <?php
