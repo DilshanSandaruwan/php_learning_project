@@ -4,8 +4,8 @@
     <div class="form">
         <h1>Simple Webpage</h1>
     <form action="include/login.inc.php" method="post">
-    <input type="text" id="uid" name="firstname" placeholder="Emial / User name">
-    <input type="password" id="pwd" name="lastname" placeholder="Password">
+    <input type="text" name="uid" placeholder="Username / Email" required>
+    <input type="password" name="pwd" placeholder="Password" required>
     <button name="submit" type="submit">Login</button>
     </form>
 
